@@ -1,0 +1,37 @@
+/* Animations */
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .banner {
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Hover Effects */
+  
+  nav a:hover {
+    background-color: #3b4ba6;
+  } 
+  
+  .service:hover {
+    box-shadow: 0 0 10px #888;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 600px) {
+    .services {
+      flex-direction: column;
+    }
+    
+    nav a {
+      float: none;
+      text-align: center;
+    }
+  }
